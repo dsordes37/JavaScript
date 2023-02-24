@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mais sobre o Dom</title>
+    <style>
+        body{
+            background-color: rgb(82, 255, 111);
+            color: white;
+            font: normal 18pt Arial;
+        }div#bt{
+            background-color: white;
+            color: rgb(82, 255, 111);
+            height: 200px;
+            width: 200px;
+            line-height: 200px;
+            text-align: center;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Qualquer coisa</h1>
+    <div id="bt" >clicou</div>
+    <!--onclick="action()" onmouseenter="entrou()" onmouseout="saiu()"-->
+    
+
+    <script>
+        var d = document.querySelector('div#bt')
+        d.addEventListener('click', action)
+        d.addEventListener('mouseenter', entrou)
+        d.addEventListener('mouseout', saiu)
+        function action(){
+            
+            d.innerText='clicou'
+        }
+
+        function entrou(){
+            d.innerText='entrou'
+            d.style.backgroundColor='rgb(82, 255, 111)'
+            d.style.color='white'
+        }
+
+        function saiu(){
+            d.innerText='saiu'
+            d.style.backgroundColor='white'
+            d.style.color='rgb(82, 255, 111)'
+
+        }
+    </script>
+    
+</body>
+</html>

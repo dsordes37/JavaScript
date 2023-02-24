@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(0, 255, 85);
+            color: white;
+        }h1{
+            font:bold 80pt Arial;
+            line-height: 20px;
+        }h2{
+            font:bold 25pt Arial;
+            line-height: 0px;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="hor">20:22</h1>
+    <h2 id="rest">segunda 09/01/2023</h2>
+
+    <script>
+        
+        function addZero(num){
+            if(string(num).length<2){
+                num=Number('0'+num)
+                return (num)
+            }
+        }
+
+        var par1=document.getElementById('hor')
+        var par2=document.getElementById('rest')
+        
+        
+        var dia= new Date().getDate()
+        var mes= new Date().getMonth()
+        var ano= new Date().getFullYear()
+
+        var diaSem= new Date().getDay()
+
+        var hora= new Date().getHours()
+        var min= new Date().getMinutes()
+        var sec= new Date().getSeconds()
+        
+        
+        switch(diaSem){
+            case 0:
+                diaSem="domindo"
+                break
+            case 1:
+                diaSem="segunda-feira"
+                break
+            case 2:
+                diaSem="terça-feira"
+                break
+            case 3:
+                diaSem="quarta-feira"
+                break
+            case 4:
+                diaSem="quinta-feira"
+                break
+            case 5:
+                diaSem="sexta-feira"
+                break
+            case 6:
+                diaSem="sábado"
+                break
+        }//sempre fique atento ao lugar em que acabam as chaves.
+        
+        
+        //hora=addZero(hora)
+
+        par1.innerText=`${hora}:${min}:${sec}`
+        par2.innerText=`${diaSem}, ${dia}/${mes+1}/${ano}.`
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+body{
+    background-color: rgb(0, 102, 255);
+    color: white;
+    font: normal 18pt Arial;
+    text-align: center;
+}section{
+    background-color: white;
+    color: rgb(102, 102, 102);
+    font: normal 18pt Arial;
+    border-radius:10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.267);
+}footer{
+    font-style: italic;
+    font-size: 18px;
+}input#nasc{
+    border-radius: 5px;
+    width: 110px;
+    font-size: 18px;
+}input#bt{
+    font-size: 18px;
+    border-radius: 5px;
+    border-color: white;
+}div#ret{
+    padding: 10px;
+}

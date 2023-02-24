@@ -1,0 +1,29 @@
+body{
+    background-color: rgb(255, 187, 0);
+    color: white;
+    font: normal 16pt Arial;
+    text-align: center;
+}section{
+    background-color: white;
+    color: rgb(48, 48, 48);
+    font: normal 18pt Arial;
+    border-radius:10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.267);
+}footer{
+    font-style: italic;
+    font-size: 18px;
+}input#box{
+    border-radius: 5px;
+    border-color: rgb(231, 231, 231);
+}div#tab{
+    padding: 30px;
+}select{
+    width: 250px;
+}input{
+    font-size: 18px;
+}option{
+    font-size: 18px;
+}

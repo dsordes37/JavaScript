@@ -1,0 +1,30 @@
+body{
+    background-color: rgb(0, 255, 170);
+    color: white;
+    font: normal 18pt Arial;
+    text-align: center;
+}section{
+    background-color: white;
+    color: rgb(32, 32, 32);
+    font: normal 18pt Arial;
+    border-radius:10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.267);
+    text-align: left;
+}footer{
+    font-style: italic;
+    font-size: 18px;
+}input#ini{
+    width: 300px;
+}input#fim{
+    width: 318px;
+}input#pas{
+    width: 290px;
+}p#p_bt{
+    text-align: center;
+}input#bt{
+    font-size: 18px;
+    width: 100px;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            background-color: orangered;
+            color: white;
+            font: normal 18pt Arial;
+        }input{
+            font: normal 18pt Arial;
+            border-radius: 5px;
+            border-color: orangered;
+        }
+
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Velocidade máxima 80km/h.</h1>
+    <p>Qual era a sua velocidade ?</p>
+
+    <input type="number" id="caixa">
+    <input type="button" id="bt" value="serei multado ?" onclick="verifica()">
+    <p id="res"></p>
+
+    <script>
+        function verifica(){
+            var box=document.getElementById('caixa')
+            var res=document.getElementById('res')
+            
+            if(parseFloat(box.value)>80){
+                res.innerHTML=`Sua velocidade era de ${box.value}km/h. Você receberá uma multa.`
+            }else{
+                res.innerHTML=`Sua velocidade era de ${box.value}km/h. Você não receberá multa. Boa viagem.`
+            }
+        }
+    </script>
+</body>
+</html>

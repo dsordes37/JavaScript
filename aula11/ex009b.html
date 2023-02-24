@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(111, 0, 255);
+            color: white;
+            font: normal 18pt Arial;
+        }input{
+            font: normal 18pt Arial;
+            border-radius:10px;
+            border-color: rgb(111, 0, 255);
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Nacionalidade</h1>
+    <p>Em qual país você nasceu ?</p>
+
+    <input type="linebox" id="box">
+    <input type="button" id="bt" value="run" onclick="verifica()">
+    <p id="res"></p>
+
+    <script>
+        function verifica(){
+            var box=document.getElementById('box')
+            var par=document.getElementById('res')
+
+            if(box.value=='Brasil'){
+                par.innerHTML=`Nascido no ${box.value}. Você é brasileiro.`
+            }else if(box.value=='França'){
+                par.innerHTML=`Nascido no ${box.value}. Você é francês.`
+            }else if(box.value==''){
+                par.innerHTML=`A linebox está <strong>vazia</strong>. Escreva o nome do seu país natal antes de rodar o sistema.`
+            }else{
+                par.innerHTML=`Nascido no ${box.value}. Você é estrangeiro.`
+            }
+        }
+    </script>
+
+    
+</body>
+</html>

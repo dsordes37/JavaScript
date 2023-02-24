@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{background-color: rgb(0, 170, 248);
+        color: rgb(255, 255, 255);
+        font: normal 18pt Arial;
+    }
+    </style>
+    <title>Documento</title>
+</head>
+<body>
+    
+
+    <h1>Treinando o <strong>DOM</strong></h1>
+    <p>Só pra não ficar vazio eu vou escrever "Olá, mundo"</p>
+    <p id="par">Olá, mundo</p>
+    <script>
+        /*var tit = document.getElementsByTagName('p')[0]
+        document.write(tit.innerText)*/
+        var d = document.querySelector('p#par')
+        d.style.backgroundColor = 'purple'
+        //d.style.color='yellow'
+
+        var cor = window.prompt('digite uma cor.')
+        if (cor=='orange'){
+            d.style.color = 'orange'
+        }else if(cor=='yellow'){
+            d.style.color='yellow'
+        }
+    </script>
+</body>
+</html>

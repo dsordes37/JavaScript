@@ -1,0 +1,20 @@
+body{
+    background-color: rgb(0, 255, 170);
+    color: white;
+    font: normal 18pt Arial;
+    text-align: center;
+}section{
+    background-color: white;
+    color: rgb(0, 255, 170);
+    font: normal 18pt Arial;
+    border-radius:10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.267);
+}footer{
+    font-style: italic;
+    font-size: 18px;
+}div#hora{
+    font-size: 80px;
+}

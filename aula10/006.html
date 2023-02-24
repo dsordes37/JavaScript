@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noco exemplo</title>
+    <style>
+        body{
+            color: white;
+            background-color: rgb(0, 174, 255);
+            font: normal 18pt Arial;
+        }input#bt{
+            width: 100px;
+        }input{
+            width: 180px;
+            height: 30px;
+            border-radius: 5px;
+            border-color: white;
+            font: normal 15pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Calculadora</h1>
+    <input type="number" name="n1" id="n1"> +
+    <input type="number" name="n2" id="n2">
+    <input type="button" name="bt" id="bt" value="somar" onclick="somar()">
+
+    <p id="par">...</p>
+
+    <script>
+        
+
+        function somar(){
+            var num1 = document.getElementById('n1')
+            var num2 = document.getElementById('n2')
+            var res = document.getElementById('par')
+            
+            var n1 = parseFloat(num1.value)
+            var n2 = parseFloat(num2.value)
+            soma=n1+n2
+            res.innerHTML = `${n1} mais ${n2} é igual a <strong>${soma}</strong>.`
+        }
+
+    </script>
+</body>
+</html>
