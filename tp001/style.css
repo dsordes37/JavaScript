@@ -75,10 +75,11 @@ footer{
     border-radius: 5px;
     color: var(--cor4);
     border-color: var(--cor4);
-}input:active{
-    background-color: var(--cor1);
 }input:hover{
     box-shadow: 2px 4px 0px 0px ;
+}input:active{
+    background-color: var(--cor1);
+    box-shadow: none;
 }
 
 #c1{background-color: var(--cor1);}
